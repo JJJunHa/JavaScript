@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtname" name="txtname"><br>
+    <button id="btnGet">Start</button>&nbsp;<button id="btnStop">Stop</button>
+    <input type="text" id="txtname2" name="txtname2">
+    
+</body>
+<script>
+
+    let button = document.getElementById('btnGet');
+    let button2 = document.getElementById('btnStop');
+    let clock=null;
+
+    button.addEventListener('click',function(){
+        let textbox2=document.getElementById('txtname2');
+        clock=setInterval(function(){
+            let now = new Date();
+            textbox2.value = now;
+        },1000);
+    });
+    button2.addEventListener('click',function(){
+        if(clock==null){
+            alert('시작먼저 하시오.');
+        }else{
+            clearInterval(clock);
+            let textbox2=document.getElementById('txtname2');
+            textbox2.value = ''
+            alert('끝났습니다.');
+        }
+    })
+    //'click','dblclick','focus','blur','change'
+    // button.addEventListener('focus',function(){
+        //     alert('focus');
+        // });
+        // button.addEventListener('blur',function(){
+            //     alert('blur');
+            // });
+    //         let texbox = document.getElementById('txtname2');
+    //         texbox.addEventListener('dblclick',function(){
+    //             alert('doublc clicked');
+    //         });
+    //         texbox.addEventListener('change',function(){ -> 값이 달라졌을때
+    //     alert('change');
+    // });
+    
+</script>
+</html>
