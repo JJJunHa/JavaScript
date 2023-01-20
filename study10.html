@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        dof=['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
+        let today = new Date();
+        document.write(today+'<br>')
+        let year = today.getFullYear();
+        document.write('year='+year+'<br>')
+        let month = today.getMonth(); //월 하나 작게 나온다 인덱스 0부터 시작
+        document.write('month='+(month+1)+'<br>')
+        let date = today.getDate(); //날짜
+        document.write('date='+date+'<br>')
+        let dow = dof[today.getDay()]; //요일 Day of Week 일:0, 월:1, 화:2, 수:3, 목:4, 금:5, 토:6,
+        document.write('dow='+dow+'<br>')
+        let hour = today.getHours();
+        document.write('hour='+hour+'<br>')
+        let minute = today.getMinutes();
+        document.write('minute='+minute+'<br>')
+        let second = today.getSeconds();
+        document.write('second='+second+'<br>')
+        
+        // let uBirth = new Date;
+        // uBirth.setFullYear(2000);
+        // uBirth.setMonth(3);
+        // uBirth.setDate(26);
+        // uBirth.setHours(12);
+        // uBirth.setMinutes(23);
+        // uBirth.setSeconds(40);
+        // document.write(uBirth);
+        let myBirth = new Date(1997,7,20,0,0,0);
+
+        document.write(myBirth+'<br>');
+        
+        let yester = new Date(2023,0,18,0,0,0); // 하루 는 86400초 -> 밀리 초 다니로 인식 1000곱하기
+        let now = new Date(2023,0,19,0,0,0);
+        document.write(now+'<br>');
+        let gap = now-myBirth
+        document.write('gap='+gap/(24*60*60*1000)+'일<br>');
+    </script>
+</html>
