@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<!-- <script laguage="javascript">
+    i=10;
+    i=3.14; //동적 타입변환(Dynamic type conversion)
+    i="Hello World";
+    i =10;
+    let ar=[1,2,"Hello",3.14];
+    document.write("<br>"); //system.out.print("\n")
+    document.write("Good Morning Vietname<br>");
+    document.write('<input type=text><button>누르기</button><br>');
+    document.write(ar[2]+"<br>"); //==system.out.print()
+    document.write(ar[3]+"<br>");
+    ar.push(100);//배열 맨뒤의 값을 추가한다.
+    document.write(ar[4]+"<br>");
+    x=ar.pop();//배열 맨뒤의 요소를 제거한다. 100dl x에 저장되고, ar에서는 지워진다.
+    document.write(x+"<br>");
+    document.write(ar+'<br>'); -->
+
+    <!-- // ar1 = [[1,2,3],['a','b','c','d'],[100,200]];
+    // document.write("길이는"+ar1[1].length+'<br>');
+    // alert('확인해주세요');
+
+    // reply = confirm("참/거짓 중에서 고르시오");
+    // document.write(reply+'<br>');
+
+    // answer = prompt('이름을 입력하시오','익명');
+    // document.write(answer+'<br>');
+    // console.log(answer);//only for programmer, debugging -->
+
+
+
+<!-- </script> -->
+<!-- <script src="a2.js"></script>
+<script lagauge="javascript">
+    alert('xxxxxx');
+</script>
+<script src="a1.js"></script> -->
+
+<script language="javascript"> //산술연산자
+    // i=10;
+    // j=5;
+    // document.write(`${i}+${j}=${i+j}<br>`);
+    // bow="Hello World";
+    // document.write(`${bow} Disney<br>`);
+
+    // name=prompt('이름을 입력하시오');
+    // if(name==''){
+    //     document.write('이름이 빈 문자열로 입력됐습니다.');
+        
+    // }else{
+    //     document.write(`이름= ${name}`);
+    // }
+    
+    // name=prompt('이름을 입력하시오');
+    // if(name==''){
+    //     document.write('반갑습니다. 고객님');
+    // }else{
+    //     document.write(`반갑습니다. ${name}님`);
+    // }
+    // let n;
+    // let str='123';
+    // n=parseInt(str);
+    // document.write(`n=${n+5}`);
+    // n=eval(`24+12`);
+    // document.write(`24+12=`+n+`<br>`);
+
+    // if(10===`10`){//타입까지 체크
+    //     document.write(`equals`);
+    // }else{
+    //     document.write(`not equals`);
+    // }
+
+    // if(true==1){
+    //     document.write(`equals`);
+    // }else{
+    //     document.write(`not equals`);
+    // }
+
+    // str=`1`;
+    // str=str+`2`;
+    // str=str+`3`;
+    // document.write(`<br>`+str);
+
+    // str=`1`;
+    // str=`2`+str;
+    // str=`3`+str;
+    // document.write(`<br>`+str);
+
+    //     for(sum=0, i=0; i<100; i++){
+    //         sum=sum+i;
+    //         // document.write(i+`<br>`);
+    //     }
+    // document.write(sum+`<br>`);
+
+    arScore=[];
+    sum=0;
+    i=0;
+        for(arScore=[]; true;){
+            score=prompt(`영어 점수를 입력하시오 [-1:종료]`);
+            score=parseInt(score);
+                if(score==-1){break;}
+            arScore.push(score);
+            sum=sum+arScore[i];
+            i++;
+            }
+    document.write(`영어점수의 갯수는 ${arScore.length}<br>`);
+    document.write(`총점은 ${sum}<br>`);
+    document.write(`평균은 ${sum/(arScore.length)}<br>`);
+            
+</script>
+</html>
