@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let ob={'name':'홍길동','age':25,'mobile' :'44445555','city':'천안시 동남구'};
+        // let key1='name';
+        // // document.write(ob.name+'<br>');
+        // // document.write(ob['mobile']+'<br>');
+        // // document.write(ob['홍길동']+'<br>');
+        // ar = {'name':{'name':'John','gender':'Make'},
+        //       'name1':{'name':'Jane','gender':'Female'},
+        //       'name2':{'name':'Johanson','age':30, 'mobile':'000000'}};
+        // document.write(ar['name']['name']);
+        // document.write('<br>');
+
+        // let arMenu=[];
+        // let name=prompt("메뉴명을 입력하시오 ['':종료]");
+        //         while(name!=''){
+        //             let price=prompt("가격을 입력하시오. ['':종료]");
+        //             let ob={'name':name,'price':parseInt(price)};
+        //             arMenu.push(ob);
+        //             name=prompt("메뉴명을 입력하시오 ['':종료]");
+        //         }
+        // showMenu(arMenu,'name','price');
+        // function showMenu(Menu,name,price){
+        //         for(let i=0; i<Menu.length; i++){
+        //         let ob = Menu[i];
+        //         document.write(ob[name]+','+ob[price]+'원<br>');
+        //         }
+        // }
+
+        // let student=[];
+        // let i=0;
+        // let sumE=0;
+        // let sumK=0;
+        // let sumM=0;
+        //     while(true){
+        //         let scoreE = getScore('영어');
+        //             if(scoreE===-1)break;
+        //         let scoreK = getScore('국어');
+        //             if(scoreK===-1)break;
+        //         let scoreM = getScore('수학');
+        //             if(scoreM===-1)break;
+        //         let ob={'eng':scoreE,'kor':scoreK,'math':scoreM}
+        //         student.push(ob);
+        //         sumE+=student[i]['eng'];
+        //         document.write(' 영어점수 : '+student[i]['eng']);
+        //         sumK+=student[i]['kor'];
+        //         document.write(' 국어점수 : '+student[i]['kor']);
+        //         sumM+=student[i]['math'];
+        //         document.write(' 수학점수 : '+student[i]['math']+'<br>');
+        //         i++
+        //     }
+        // showResult(sumE,sumK,sumM,student.length);
+
+        //     function getScore(str){
+        //         let score = prompt(str+'점수를 입력하시오[-1:종료]');
+        //         return parseInt(score);
+        //     }
+            
+        //     function showResult(totalE, totalK, totalM, homany){
+        //         document.write('영어점수 총합 : '+totalE+' 국어 점수 총합 : '+totalK+' 수학 점수 총합 : '+totalM+'<br>');
+        //         document.write('영어점수 평균 : '+(totalE/homany)+' 국어 점수 평균 : '+(totalK/homany)+' 수학 점수 평균 : '+(totalM/homany));
+        //     }
+
+        // for(i=2; i<10; i++){
+        //     for(j=1; j<10; j++){
+        //         display(i,j);
+        //     }
+        // }
+
+        // function display(x,y){
+        //     document.write(x+'x'+y+'='+(x*y)+'<br>');
+        // }
+
+        // a=10;
+        // b=20;
+        // c=30;
+        // let obj=func(a,b,c);
+        // document.write('a='+obj['first']+'<br>');
+        // document.write('b='+obj['second']+'<br>');
+        // document.write('c='+obj['third']+'<br>');
+
+        // function func(x,y,z){
+        //     x++;
+        //     y++;
+        //     z++;
+        //     let ob={'first':x,'second':y,'third':z};
+        //     return ob;
+        // }
+
+        let ob = {'plus':function(a,b){return a+b;}, //무명함수
+                  'minus':(a,b) => {return a-b;},//(람다식) 함수랑 같음
+                  'multi':function(a,b){return a*b;},
+                  'divide':function(a,b){
+                        if(b==0){
+                            document.write('divide by zero');
+                            return 0;
+                        }
+                        return a/b;
+                    }               
+                };
+        x=ob['plus'](10,15);
+        document.write(x+'<br>');
+        x=ob['minus'](10,15);
+        document.write(x+'<br>');
+
+    </script>
+</body>
+</html>
